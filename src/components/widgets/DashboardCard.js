@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     padding: 15,
     '& h4': {
       fontSize: 36,
+      fontWeight: 600,
       color: '#F88',
       textTransform: 'uppercase'
     },

@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar brand="Covid-19" />
 
-      <div style={{ paddingTop: 75, }}>
+      <div style={{ paddingTop: 100, }}>
         <Home />
       </div>
     </div>

@@ -7,8 +7,8 @@ import { DashboardCard } from './index';
 
 const useStyles = makeStyles({
   paper: {
-    background: '#FFE0D6',
-    padding: 20,
+    background: '#fff8',
+    padding: '50px 20px',
   }
 })
 
