@@ -21,3 +21,4 @@ const app = (
 ReactDOM.render( app, document.getElementById('root') );
 
 serviceWorker.register();
+document.addEventListener("contextmenu", event => event.preventDefault());

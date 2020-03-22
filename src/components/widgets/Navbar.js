@@ -27,7 +27,7 @@ const useStyles = makeStyles({
 
 const Navbar = props => {
   const classes = useStyles();
-
+  
   return (
     <AppBar className={ classes.root }>
       <Toolbar>
