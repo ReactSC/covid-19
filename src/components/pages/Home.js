@@ -12,7 +12,7 @@ const Home = () => {
   const md = useMediaQuery(theme.breakpoints.up("md"));
   const lg = useMediaQuery(theme.breakpoints.up("lg"));
 
-  const { stats, loading, error } = useStats("/api");
+  const { stats, loading, error } = useStats("https://covid19.mathdro.id/api");
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error...</p>;
   return (
