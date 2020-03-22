@@ -1,14 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+// import CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
+
+// import Provider
+// import { Provider } from './components/store';
+
+// import BrowserRouter
+
+const app = (
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+      <App />
+  </React.StrictMode>
 );
+
+ReactDOM.render( app, document.getElementById('root') );
 
 serviceWorker.register();

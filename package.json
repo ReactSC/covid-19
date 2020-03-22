@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "author": "Sofiqul Islam <schoolwab@gmail.com> (https://github.com/schoolwab)",
-  "homepage": "https://reactsc.github.io/covid-19",
+  "homepage": "https://reactsc.github.io/covid-19/",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
@@ -39,5 +39,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://covid19.mathdro.id:443/"
 }
