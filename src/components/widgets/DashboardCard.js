@@ -19,7 +19,7 @@ const useStyles = makeStyles({
     padding: 15,
     '& h4': {
       fontSize: 36,
-      color: '#FC8282',
+      color: '#F88',
       textTransform: 'uppercase'
     },
     '& hr': {
@@ -29,7 +29,7 @@ const useStyles = makeStyles({
       marginBottom: 15,
     },
     '& p': {
-      fontSize: 20,
+      fontSize: 24,
       color: '#F88',
     },
   }

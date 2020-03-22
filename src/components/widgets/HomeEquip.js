@@ -12,34 +12,41 @@ const useStyles = makeStyles({
   }
 })
 
+const content = {
+  confirmed: "The total number of people affected by CORONA VIRUS",
+  recovered: "Number of people recovering from CORONA VIRUS",
+  deaths: "Number of dead people suffering from CORONA VIRUS"
+};
 
 export const Lg = props => {
   const classes = useStyles();
-  const { confirmed, Recovered, Deaths } = props
-
+  const { confirmed, Recovered, Deaths } = props;
   return (
     <Grid item>
-      <Paper className={classes.paper }>
+      <Paper className={classes.paper}>
         <Toolbar>
           <DashboardCard
             num={confirmed}
-            title="confirmed"
+            title="Confirmed"
             type="up"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+            content={content.confirmed}
+          />
           <DashboardCard
             num={Recovered}
             title="Recovered"
             type="down"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+            content={content.recovered}
+          />
           <DashboardCard
             num={Deaths}
             title="Deaths"
             type="up"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+            content={content.deaths}
+          />
         </Toolbar>
       </Paper>
     </Grid>
-  )
+  );
 }
 
 
@@ -55,21 +62,24 @@ export const Md = props => {
             num={confirmed}
             title="confirmed"
             type="up"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+            content={content.confirmed}
+          />
           <DashboardCard
             num={Recovered}
             title="Recovered"
             type="down"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+            content={content.recovered}
+          />
           <DashboardCard
             num={Deaths}
             title="Deaths"
             type="up"
-            content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+            content={content.deaths}
+          />
         </Toolbar>
       </Paper>
     </Grid>
-  )
+  );
 }
 
 
@@ -84,22 +94,25 @@ export const Sm = props => {
           num={confirmed}
           title="confirmed"
           type="left"
-          content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+          content={content.confirmed}
+        />
         <br />
         <DashboardCard
           num={Recovered}
           title="Recovered"
           type="right"
-          content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+          content={content.recovered}
+        />
         <br />
         <DashboardCard
           num={Deaths}
           title="Deaths"
           type="left"
-          content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+          content={content.deaths}
+        />
       </Paper>
     </Grid>
-  )
+  );
 }
 
 
@@ -114,20 +127,23 @@ export const Xs = props => {
           num={confirmed}
           title="confirmed"
           type="up"
-          content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+          content={content.confirmed}
+        />
         <br />
         <DashboardCard
           num={Recovered}
           title="Recovered"
           type="up"
-          content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+          content={content.recovered}
+        />
         <br />
         <DashboardCard
           num={Deaths}
           title="Deaths"
           type="up"
-          content="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua." />
+          content={content.deaths}
+        />
       </Paper>
     </Grid>
-  )
+  );
 }

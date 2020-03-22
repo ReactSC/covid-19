@@ -2,9 +2,8 @@ import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 import { useMediaQuery, Container, Grid } from '@material-ui/core';
 
-import { SocialLinks } from '../widgets';
 import { useStats } from '../utils';
-import { Lg, Md, Sm, Xs } from '../widgets';
+import { Lg, Md, Sm, Xs, SocialLinks, LastUpdateTime } from "../widgets";
 
 const Home = () => {
   const theme = useTheme();
@@ -47,6 +46,7 @@ const Home = () => {
           xs
         )}
       </Grid>
+      <LastUpdateTime time={ stats.lastUpdate } />
       <SocialLinks />
     </Container>
   );
